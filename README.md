@@ -27,3 +27,7 @@ SpartaTown like gather (made by Unity)
 
 # 선택요구사항
 
+## 1. 캐릭터 애니메이션 추가
+
+* 캐릭터가 가만히 있을 때의 애니메이션 (Player Idle)
+* 캐릭터가 움직일 때의 애니메이션 추가 (Player Walk)
