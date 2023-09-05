@@ -15,7 +15,9 @@ SpartaTown like gather (made by Unity)
 * 키보드 A/W/S/D 를 이용하여 캐릭터가 움직입니다.
 * 캐릭터는 마우스 방향을 바라봅니다. (좌/우)
 * InputSystem 활용
-* [TopDownCharacterController.cs](https://github.com/kyj0701/SpartaTown/blob/main/Assets/Scripts/Controller/TopDownCharacterController.cs), [PlayerInputController.cs](https://github.com/kyj0701/SpartaTown/blob/main/Assets/Scripts/Controller/PlayerInputController.cs), [TopDownMovement.cs](https://github.com/kyj0701/SpartaTown/blob/main/Assets/Scripts/Entities/TopDownMovement.cs)
+* [TopDownCharacterController.cs](https://github.com/kyj0701/SpartaTown/blob/main/Assets/Scripts/Controller/TopDownCharacterController.cs)
+* [PlayerInputController.cs](https://github.com/kyj0701/SpartaTown/blob/main/Assets/Scripts/Controller/PlayerInputController.cs)
+* [TopDownMovement.cs](https://github.com/kyj0701/SpartaTown/blob/main/Assets/Scripts/Entities/TopDownMovement.cs)
 
 ## 3. 방 만들기
 
