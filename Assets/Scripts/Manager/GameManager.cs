@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private GameObject player;
-    public GameObject Player
+    [SerializeField] private Player player;
+    public Player Player
     {
         get
         {
@@ -34,6 +34,18 @@ public class GameManager : MonoBehaviour
             playerName = value;
         }
     }
+    private int playerId = 0;
+    public int PlayerId
+    {
+        get
+        {
+            return playerId == -1 ? -1 : playerId;
+        }
+        set
+        {
+            playerId = value;
+        }
+    }
 
     void Awake()
     {
@@ -46,5 +58,15 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    public void GameStart()
+    {
+        player.gameObject.SetActive(true);
+    }
+
+    public void CharacterSet(int id)
+    {
+        playerId = id;
     }
 }
