@@ -1,0 +1,50 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    private static GameManager instance = null;
+    public static GameManager Instance
+    {
+        get
+        {
+            return instance == null ? null : instance;
+        }
+    }
+
+    [SerializeField] private GameObject player;
+    public GameObject Player
+    {
+        get
+        {
+            return player == null ? null : player;
+        }
+    }
+
+    private string playerName = null;
+    public string PlayerName
+    {
+        get
+        {
+            return playerName == null ? null : playerName;
+        }
+        set
+        {
+            playerName = value;
+        }
+    }
+
+    void Awake()
+    {
+        // Singleton
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+}
