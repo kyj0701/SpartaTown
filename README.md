@@ -1,6 +1,7 @@
 # SpartaTown
 SpartaTown like gather (made by Unity)
 
+![image](https://github.com/kyj0701/SpartaTown/assets/31722243/06811c23-c51c-4062-9762-cc24c9213156)
 
 
 # 필수요구사항
