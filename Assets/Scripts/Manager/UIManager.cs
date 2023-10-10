@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI playerName;
 
+    [SerializeField] private TextMeshProUGUI[] memberNameTexts;
+
     void Awake()
     {
         // Singleton
@@ -32,6 +34,20 @@ public class UIManager : MonoBehaviour
 
     public void SetPlayerName()
     {
-        playerName.text = GameManager.Instance.PlayerName;
+        playerName.text = GameManager.Instance.Player.Name;
+    }
+
+    public void SetMembersText()
+    {
+        Character[] names = MemberManager.Instance.characters.ToArray();
+
+        memberNameTexts[0].gameObject.SetActive(true);
+        memberNameTexts[0].text = GameManager.Instance.Player.Name;
+
+        for (int i = 0; i < names.Length; i++)
+        {
+            memberNameTexts[i + 1].gameObject.SetActive(true);
+            memberNameTexts[i + 1].text = names[i].Name;
+        }
     }
 }
