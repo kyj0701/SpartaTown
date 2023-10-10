@@ -22,31 +22,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private string playerName = null;
-    public string PlayerName
-    {
-        get
-        {
-            return playerName == null ? null : playerName;
-        }
-        set
-        {
-            playerName = value;
-        }
-    }
-    private int playerId = 0;
-    public int PlayerId
-    {
-        get
-        {
-            return playerId == -1 ? -1 : playerId;
-        }
-        set
-        {
-            playerId = value;
-        }
-    }
-
     void Awake()
     {
         // Singleton
@@ -67,6 +42,6 @@ public class GameManager : MonoBehaviour
 
     public void CharacterSet(int id)
     {
-        playerId = id;
+        player.Id = id;
     }
 }

@@ -13,7 +13,7 @@ public class PlayerNameInput : MonoBehaviour
     {
         if (playerNameInput.text.Length >= 2 && playerNameInput.text.Length <= 10)
         {
-            GameManager.Instance.PlayerName = playerNameInput.text;
+            GameManager.Instance.Player.Name = playerNameInput.text;
             UIManager.Instance.SetPlayerName();
             DeactiveNameCanvas();
         }

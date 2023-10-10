@@ -16,6 +16,6 @@ public class CharacterSelectImage : MonoBehaviour
 
     public void SetSprite()
     {
-        characterSprite.sprite = spritePool[GameManager.Instance.PlayerId];
+        characterSprite.sprite = spritePool[GameManager.Instance.Player.Id];
     }
 }
