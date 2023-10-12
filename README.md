@@ -1,4 +1,5 @@
 # SpartaTown
+내일배움캠프 Unity A08 팔이바게트 김예준
 SpartaTown like gather (made by Unity)
 
 ![image](https://github.com/kyj0701/SpartaTown/assets/31722243/06811c23-c51c-4062-9762-cc24c9213156)
